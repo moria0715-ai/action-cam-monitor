@@ -310,12 +310,12 @@
   <div style="display:flex;align-items:center;gap:12px;">
     <div class="date-picker-wrap">
       <span class="live-dot"></span>
-      <input type="date" id="dp-start" value="2026-02-27" min="2026-01-01" max="2026-03-17">
+      <input type="date" id="dp-start" value="2026-02-27" min="2026-01-01" max="2026-03-18">
       <span class="date-sep">—</span>
-      <input type="date" id="dp-end" value="2026-03-17" min="2026-01-01" max="2026-03-17">
+      <input type="date" id="dp-end" value="2026-03-18" min="2026-01-01" max="2026-03-18">
       <button class="date-apply-btn" onclick="applyAllDateRanges()">应用</button>
     </div>
-    <span class="date-range-label" id="date-range-display">数据至 3月17日 · 2026年03月18日 更新</span>
+    <span class="date-range-label" id="date-range-display">数据至 3月18日 · 2026年03月18日 更新</span>
     <div style="font-size:13px;color:var(--muted);">监控关键词：<strong style="color:var(--text);" id="shared-keywords">DJI Action / Osmo / 360</strong></div>
   </div>
 </div>
@@ -3308,12 +3308,20 @@ const DB = (() => {
       es:{yt:260,tt:175,ig:111,fb:46,tw:13,rd:0,sent:61},
       uk:{yt:682,tt:449,ig:358,fb:130,tw:40,rd:0,sent:63}
   };
+
+  d['2026-03-18'] = {
+      de:{yt:501,tt:360,ig:238,fb:99,tw:27,rd:0,sent:69},
+      fr:{yt:450,tt:267,ig:193,fb:76,tw:20,rd:0,sent:63},
+      it:{yt:240,tt:153,ig:119,fb:45,tw:12,rd:0,sent:69},
+      es:{yt:250,tt:193,ig:133,fb:49,tw:14,rd:0,sent:65},
+      uk:{yt:611,tt:419,ig:303,fb:115,tw:33,rd:0,sent:66}
+  };
 return d;
 })();
 
 const ALL_DATES = Object.keys(DB).sort();
 let SEL_START = '2026-02-27';
-let SEL_END   = '2026-03-17';
+let SEL_END   = '2026-03-18';
 
 function dateRange_dji(s,e){
   const out=[],cur=new Date(s),end=new Date(e);
@@ -3827,6 +3835,14 @@ const DB = (() => {
       es:{yt:266,tt:220,ig:175,fb:60,tw:41,rd:30,sent:57},
       uk:{yt:539,tt:472,ig:363,fb:134,tw:74,rd:54,sent:65}
   };
+
+  d['2026-03-18'] = {
+      de:{yt:588,tt:458,ig:398,fb:139,tw:93,rd:66,sent:61},
+      fr:{yt:375,tt:323,ig:250,fb:87,tw:59,rd:44,sent:61},
+      it:{yt:231,tt:200,ig:177,fb:62,tw:39,rd:25,sent:69},
+      es:{yt:278,tt:217,ig:176,fb:62,tw:43,rd:29,sent:59},
+      uk:{yt:698,tt:650,ig:439,fb:149,tw:106,rd:77,sent:60}
+  };
 return d;
 })();
 
@@ -3835,7 +3851,7 @@ const ALL_DATES = Object.keys(DB).sort();
 
 // ---- 当前选中范围 ----
 let SEL_START = '2026-02-27';
-let SEL_END   = '2026-03-17';
+let SEL_END   = '2026-03-18';
 
 // ---- 工具函数 ----
 function dateRange_i360(s, e) {
@@ -4789,12 +4805,20 @@ const DB = (() => {
       es:{yt:193,tt:146,ig:102,fb:50,tw:21,rd:17,sent:58},
       uk:{yt:520,tt:391,ig:225,fb:105,tw:62,rd:40,sent:63}
   };
+
+  d['2026-03-18'] = {
+      de:{yt:389,tt:312,ig:225,fb:96,tw:45,rd:38,sent:65},
+      fr:{yt:334,tt:231,ig:173,fb:77,tw:38,rd:30,sent:59},
+      it:{yt:170,tt:145,ig:89,fb:45,tw:21,rd:17,sent:62},
+      es:{yt:192,tt:154,ig:107,fb:54,tw:24,rd:20,sent:62},
+      uk:{yt:435,tt:393,ig:233,fb:116,tw:56,rd:43,sent:62}
+  };
 return d;
 })();
 
 const ALL_DATES = Object.keys(DB).sort();
 let SEL_START = '2026-02-27';
-let SEL_END   = '2026-03-17';
+let SEL_END   = '2026-03-18';
 
 function dateRange_gp(s,e){
   const out=[],cur=new Date(s),end=new Date(e);
